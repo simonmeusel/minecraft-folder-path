@@ -1,13 +1,13 @@
 # minecraft-folder-path
 NPM package for retrieving the minecraft folder path
 
-## Install the package
-
-    npm install minecraft-folder-path
-
 ## Get the path of minecraft
 
-    console.log(require('minecraft-folder-path'));
+```javascript
+console.log(require('minecraft-folder-path'));
+```
+
+## Output
 
 ### On Linux
  > ~/.minecraft
