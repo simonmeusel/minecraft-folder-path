@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/simonmeusel/minecraft-folder-path/issues"
   },
-  "homepage": "https://github.com/simonmeusel/minecraft-folder-path#readme"
+  "homepage": "https://github.com/simonmeusel/minecraft-folder-path#readme",
+  "dependencies": {
+    "user-settings-dir": "0.0.3"
+  }
 }
