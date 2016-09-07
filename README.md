@@ -20,7 +20,7 @@ console.log(require('minecraft-folder-path'));
 
 #### Note that the path will be absolute, so `~` will be replaced with the actual user dir and `%appdata%` with the actual path
 
-## License (MTI)
+## License (MIT)
 
 Copyright (c) 2016 Simon Meusel
 
