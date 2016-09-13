@@ -1,5 +1,5 @@
 # minecraft-folder-path
-NPM package for retrieving the minecraft folder path
+📂NPM package for retrieving the minecraft folder path
 
 ## Get the path of minecraft
 
