@@ -1,18 +1,21 @@
 const path = require('path');
 const os = require('os');
 
-function locate() {
-  switch (os.type()) {
-      case 'Darwin':
-      return path.join(os.homedir(), "Library/Application Support/minecraft");
+let folder = "";
 
-      case 'win32':
-      case 'Windows_NT':
-      return path.join(require('user-settings-dir')(), ".minecraft");
+switch (os.type()) {
+    case 'Darwin':
+    folder = path.join(os.homedir(), '/Library/Application Support/minecraft');
+    break;
 
-      default:
-      return path.join(os.homedir(), ".minecraft");
-  }
+    case 'win32':
+    case 'Windows_NT':
+    folder = path.join(require('user-settings-dir')(), '.minecraft');
+    break;
+
+    default:
+    folder = path.join(os.homedir(), '.minecraft');
+    break;
 }
 
-module.exports = locate();
+module.exports = folder;
