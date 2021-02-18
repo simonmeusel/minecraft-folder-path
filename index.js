@@ -7,13 +7,19 @@ switch (os.type()) {
     case "Darwin":
         folder = path.join(
             os.homedir(),
-            "/Library/Application Support/minecraft"
+            "/Library",
+            "Application Support",
+            "minecraft"
         );
         break;
 
     case "win32":
     case "Windows_NT":
-        folder = path.join(process.env.APPDATA, ".minecraft");
+        folder = path.join(
+            process.env.APPDATA ||
+                path.join(os.homedir(), "AppData", "Roaming"),
+            ".minecraft"
+        );
         break;
 
     default:
