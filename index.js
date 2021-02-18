@@ -10,7 +10,7 @@ switch (os.type()) {
 
     case 'win32':
     case 'Windows_NT':
-    folder = path.join(require('user-settings-dir')(), '.minecraft');
+    folder = path.join(process.env.APPDATA, '.minecraft');
     break;
 
     default:
